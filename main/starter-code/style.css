@@ -3,8 +3,6 @@ body{
   margin-left: 170px;
 }
 
-
-
 h1 {
   font-family: 'IBM Plex Sans', sans-serif;
   font-weight: bold;
@@ -40,9 +38,6 @@ h2 {
   margin-top: 65px;
 }
 
-.top-container {
-}
-
 .top-container .body1 {
   width: 825px;
   margin-top: -10px;
@@ -53,6 +48,14 @@ h2 {
   position: absolute;
   top:-250px;
   left: -250px;
+}
+
+#background-tablet {
+display: none;
+}
+
+#background-mobile {
+  display: none;
 }
 
 #illustration {
@@ -95,8 +98,8 @@ h2 {
   color: white;
   padding-left: 55px;
   padding-top: 30px;
-  padding-right: 67px;
-  width: 324px;
+  padding-right: 65px;
+  width: 326px;
   height: 600px;
   position: absolute;
   left: 742px;
@@ -123,6 +126,7 @@ h2 {
 #month {
   font-family: 'IBM Plex Sans', sans-serif;
   font-weight: normal;
+  font-size: 20px;
   display: inline;
   position: relative;
   top: -19px;
@@ -163,7 +167,7 @@ button {
 
 footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   position: absolute;
   top: 1700px;
   width: 1110px;
@@ -174,10 +178,148 @@ footer {
 }
 
 footer .body2 {
-  margin-left: -200px;
+  margin-left: 150px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .body2 p {
   width: 366px;
+  margin-top: 0px;
+}
+
+.social {
+  width: 105px;
+  height: 20px;
+  position: relative;
+  top: 30px;
+
 }
 
 .social svg {
   margin-left: 12px;
+}
+
+svg.social-icon path:hover {
+  fill: #fa7453 !important;
+}
+
+
+/* tablet view */
+
+
+@media screen and (max-width:768px) {
+
+  body {
+    margin-left: 40px;
+  }
+
+  h1 {
+    font-size: 64px;
+    line-height: 64px;
+    width: 520px;
+  }
+
+  h2 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .body1 {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+#background-desktop {
+  display: none;
+}
+
+#background-tablet {
+  display: block;
+  position: absolute;
+  z-index: -3;
+  top:-260px;
+  left: -390px;
+}
+
+#background-mobile {
+  display: none;
+}
+
+ .header {
+   margin-bottom: 80px;
+ }
+
+.top-container .body1 {
+  width: 520px;
+}
+
+#pattern-1 {
+  width: 267px;
+  height: 400px;
+  left: 537px;
+  top: -32px;
+}
+
+#pattern-2 {
+  width: 280px;
+  height: 420px;
+  left: 275px;
+  top: 738px;
+}
+
+#illustration {
+  width: 270px;
+  height: 556px;
+  top: 628px;
+  left: 110px;
+}
+
+#rectangle {
+  width: 696px;
+  height: 600px;
+  position: absolute;
+  left: 40px;
+  top: 770px;
+}
+
+.red-container {
+  width: 304px;
+  height: 546px;
+  top: 922px;
+  left: 285px;
+  padding-left: 50px;
+  padding-top: 25px;
+  padding-right: 45px;
+}
+
+button {
+  width: 296px;
+  height: 61px;
+}
+
+footer {
+  width: 696px;
+  flex-direction: column;
+}
+
+#logo-bottom {
+  width: 146px;
+  margin-bottom: 23px;
+}
+
+footer .body2 {
+  width: 100%;
+  display: flex;
+  margin-left: 0;
+}
+
+.social {
+  position: relative;
+  top: 20px;
+}
+
+
+
 }
